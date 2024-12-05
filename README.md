@@ -146,5 +146,3 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 <p align="center">Made with ❤️ by <a href="https://github.com/lafllamme">lafllamme</a></p>
 
 ---
-
-This README includes badges, a clean structure, and is tailored to your specific use case. Let me know if you’d like any changes or additional details!
