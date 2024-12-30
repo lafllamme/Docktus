@@ -1,13 +1,12 @@
-<h1 align="center">⚡ Dockerized Directus + Nuxt.js</h1>
+<h1 align="center">⚡ Dockerized Directus</h1>
 
 <p align="center">
-  A Dockerized setup for hosting a Directus instance, perfect for integration with modern frameworks like Nuxt.js.
+  A Dockerized setup for hosting a Directus instance, perfect for modern web projects.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Docker-Enabled-blue" alt="Docker">
   <img src="https://img.shields.io/badge/Directus-v9.0.0-blueviolet" alt="Directus">
-  <img src="https://img.shields.io/badge/Nuxt.js-v3.0.0-blue" alt="Nuxt.js">
   <a href="https://github.com/lafllamme/Docktus/commits/main"><img src="https://img.shields.io/github/last-commit/lafllamme/Docktus" alt="Last Commit"></a>
   <a href="https://github.com/lafllamme/Docktus/issues"><img src="https://img.shields.io/github/issues/lafllamme/Docktus" alt="Open Issues"></a>
 </p>
@@ -17,7 +16,6 @@
 ## 🚀 Features
 
 - **Fully Dockerized**: Get Directus up and running with minimal configuration.
-- **Nuxt.js Ready**: Designed for seamless integration with Nuxt.js for self-hosted or online projects.
 - **Scalable Architecture**: Use Docker Compose for managing multiple services.
 
 ---
@@ -40,8 +38,6 @@ Ensure the following are installed:
 ├── .env
 ├── Directus/
 │   └── [Directus project files]
-└── Nuxt/
-    └── [Nuxt project files]
 ```
 
 ---
@@ -62,7 +58,6 @@ Create a `.env` file in the root directory with the following content:
 ```env
 # .env
 DIRECTUS_PORT=8055
-NUXT_PORT=3000
 DATABASE_HOST=db
 DATABASE_USER=admin
 DATABASE_PASSWORD=secret
@@ -77,7 +72,6 @@ docker-compose up -d
 ### 4. Access the Services
 
 - Directus: [http://localhost:8055](http://localhost:8055)
-- Nuxt.js (if initialized): [http://localhost:3000](http://localhost:3000)
 
 ---
 
@@ -94,40 +88,17 @@ Use Docker Compose to manage the services:
 
 ---
 
-## 📐 Development Workflow
-
-1. **Start Services**:
-
-    ```bash
-    docker-compose up
-    ```
-
-2. **Initialize Nuxt.js Project**:
-
-    ```bash
-    cd Nuxt
-    npx nuxi init
-    ```
-
-3. **Access Directus**:
-
-   Login at [http://localhost:8055](http://localhost:8055) and set up your Directus project.
-
----
-
 ## 🔧 Ports & Configuration
 
 ### Exposed Ports
 
 - **8055**: Directus admin panel
-- **3000**: Nuxt.js development server
 
 ---
 
 ## 📚 Resources
 
 - [Directus Documentation](https://docs.directus.io/)
-- [Nuxt.js Documentation](https://v3.nuxtjs.org/)
 
 ---
 
